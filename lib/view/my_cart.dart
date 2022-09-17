@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:hallo/weight/Icon_prodact.dart';
 import 'package:hallo/weight/constant.dart';
 
 import '../weight/show_button_shit.dart';
 
 class MyCart extends StatelessWidget {
-  MyCart({Key? key}) : super(key: key);
+  const MyCart({Key? key}) : super(key: key);
 
   // final List content = [
   //   ["pepper_red.png", "Bell Pepper Red", "1kg,price", "\$4.99"],
@@ -64,8 +63,8 @@ class MyCart extends StatelessWidget {
                 color: kWhiteColor,
                 fontSize: 18,
                 fontWeight: FontWeight.bold), ), onPressed: () {
-             showBottomSheet(context: context, builder:(BuildContext context) {
-               return ShowButton();
+             showBottomSheet(context: context,backgroundColor: kBlackColor.withOpacity(0.3) ,builder:(BuildContext context) {
+               return const ShowButton();
              });
 
 
